@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cherries"
+    android:orientation="vertical"
+    android:background="#30B573">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Banana"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/banana_small" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:id="@+id/nutrition_Facts_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Nutrition Facts Banana"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/amount_Per_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Amount per 100 grams" />
+
+            <TextView
+                android:id="@+id/calories_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nutrition_Facts_Id"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Calories 89" />
+
+            <TextView
+                android:id="@+id/daily_Value_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calories_Id"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="% Daily Value*" />
+
+            <TextView
+                android:id="@+id/total_Fat_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daily_Value_Id"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="Total Fat 0.3 g" />
+
+            <TextView
+                android:id="@+id/total_Fat_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daily_Value_Id"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="0%" />
+
+            <TextView
+                android:id="@+id/saturated_Fat_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_Fat_Id"
+                android:layout_alignEnd="@+id/nutrition_Facts_Id"
+                android:layout_alignRight="@+id/nutrition_Facts_Id"
+                android:text="Saturated fat 0.1 g" />
+
+            <TextView
+                android:id="@+id/saturated_Fat_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daily_Value_Id"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="0%" />
+
+            <TextView
+                android:id="@+id/polyunsaturated_Fat_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/saturated_Fat_Id"
+                android:layout_alignStart="@+id/saturated_Fat_Id"
+                android:text="Polyunsaturated fat 0.1 g"
+                android:layout_alignLeft="@+id/saturated_Fat_Id" />
+
+            <TextView
+                android:id="@+id/monounsaturated_Fat_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/polyunsaturated_Fat_Id"
+                android:layout_alignStart="@+id/saturated_Fat_Id"
+                android:text="Monounsaturated fat 0 g"
+                android:layout_alignLeft="@+id/saturated_Fat_Id" />
+
+            <TextView
+                android:id="@+id/cholesterol_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monounsaturated_Fat_Id"
+                android:layout_alignParentStart="true"
+                android:text="Cholesterol 0 mg"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/cholesterol_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monounsaturated_Fat_Id"
+                android:layout_alignParentEnd="true"
+                android:text="0%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/sokium_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cholesterol_Id"
+                android:layout_alignParentStart="true"
+                android:text="Sodium 1 mg"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/sodium_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cholesterol_Id"
+                android:layout_alignParentEnd="true"
+                android:text="0%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/potassium_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sokium_Id"
+                android:layout_alignParentStart="true"
+                android:text="Potassium 358 mg"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/potassium_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sokium_Id"
+                android:layout_alignParentEnd="true"
+                android:text="10%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/totol_Carbohydrate_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/potassium_Id"
+                android:layout_alignParentStart="true"
+                android:text="Total Carbohydrate 23 g"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/total_Carbohydrate_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/potassium_Id"
+                android:layout_alignParentEnd="true"
+                android:text="7%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/dietary_Fiber_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totol_Carbohydrate_Id"
+                android:layout_alignStart="@+id/saturated_Fat_Id"
+                android:text="Dietary fiber  2.6 g"
+                android:layout_alignLeft="@+id/saturated_Fat_Id" />
+
+            <TextView
+                android:id="@+id/dietary_Fiber_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dietary_Fiber_Id"
+                android:layout_alignParentEnd="true"
+                android:text="10%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/sugar_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dietary_Fiber_Id"
+                android:layout_alignStart="@+id/saturated_Fat_Id"
+                android:text="Sugar 12 g"
+                android:layout_alignLeft="@+id/saturated_Fat_Id" />
+
+            <TextView
+                android:id="@+id/protein_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sugar_Id"
+                android:layout_alignParentStart="true"
+                android:text="Protein 1.1 g"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/protein_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sugar_Id"
+                android:layout_alignParentEnd="true"
+                android:text="2%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/vitamin_A_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/protein_Id"
+                android:layout_alignParentStart="true"
+                android:text="Vitamin A"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/vitamin_A_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/protein_Id"
+                android:layout_alignEnd="@+id/polyunsaturated_Fat_Id"
+                android:layout_alignRight="@+id/polyunsaturated_Fat_Id"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginRight="27dp"
+                android:text="1%" />
+
+            <TextView
+                android:id="@+id/vitamin_C_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/protein_Id"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="97dp"
+                android:layout_marginRight="97dp"
+                android:text="Vitamin C" />
+
+            <TextView
+                android:id="@+id/vitamin_C_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/protein_Id"
+                android:layout_alignParentEnd="true"
+                android:text="14%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/calcium_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_A_Id"
+                android:layout_alignParentStart="true"
+                android:text="Calcium"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/calcium_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_A_Id"
+                android:layout_alignStart="@+id/vitamin_A_Percent_Id"
+                android:text="0%"
+                android:layout_alignLeft="@+id/vitamin_A_Percent_Id" />
+
+            <TextView
+                android:id="@+id/iron_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_A_Id"
+                android:layout_alignStart="@+id/vitamin_C_Id"
+                android:text="Iron"
+                android:layout_alignLeft="@+id/vitamin_C_Id" />
+
+            <TextView
+                android:id="@+id/iron_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_A_Id"
+                android:layout_alignParentEnd="true"
+                android:text="1%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/vitamin_D_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calcium_Id"
+                android:layout_alignParentStart="true"
+                android:text="Vitamin D"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/vitamin_D_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calcium_Id"
+                android:layout_alignStart="@+id/vitamin_A_Percent_Id"
+                android:text="0%"
+                android:layout_alignLeft="@+id/vitamin_A_Percent_Id" />
+
+            <TextView
+                android:id="@+id/vitamin_B-6_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calcium_Id"
+                android:layout_alignStart="@+id/vitamin_C_Id"
+                android:text="Vitamin B-6"
+                android:layout_alignLeft="@+id/vitamin_C_Id" />
+
+            <TextView
+                android:id="@+id/vitamin_B-6_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calcium_Id"
+                android:layout_alignParentEnd="true"
+                android:text="20%"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/vitamin_B-12_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_D_Id"
+                android:layout_alignParentStart="true"
+                android:text="Vitamin B-12"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/vitamin_B-12_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_D_Id"
+                android:layout_alignStart="@+id/vitamin_A_Percent_Id"
+                android:text="0%"
+                android:layout_alignLeft="@+id/vitamin_A_Percent_Id" />
+
+            <TextView
+                android:id="@+id/magnesium_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_D_Id"
+                android:layout_alignStart="@+id/vitamin_C_Id"
+                android:text="Magnesium"
+                android:layout_alignLeft="@+id/vitamin_C_Id" />
+
+            <TextView
+                android:id="@+id/magnesium_Percent_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vitamin_D_Id"
+                android:layout_alignParentEnd="true"
+                android:text="6%"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
